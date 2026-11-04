@@ -831,7 +831,8 @@
     <svg viewBox="-108 -38 216 126" aria-hidden="true"><path d="M-93.7 -27.0 L-95.0 -26.7 L-95.9 -26.0 L-96.6 -23.8 L-95.6 -13.5 L-92.5 1.6 L-87.7 15.7 L-84.9 22.1 L-78.2 33.8 L-70.2 44.5 L-61.3 53.4 L-56.4 57.6 L-46.3 64.4 L-40.7 67.4 L-33.6 70.5 L-32.2 70.6 L-31.1 70.1 L-30.0 68.8 L-29.8 67.4 L-32.9 29.4 L-13.4 -10.0 L-13.3 -11.4 L-16.4 -25.7 L-17.5 -26.6 L-18.9 -27.0 Z" stroke="#5b4a3d" stroke-width="5" fill="none" stroke-linejoin="round"/><path d="M-23.4 71.8 L-22.9 73.2 L-21.9 74.1 L-18.1 75.2 L-6.1 76.8 L0.1 77.0 L11.9 76.2 L18.1 75.2 L29.5 72.1 L35.4 69.8 L46.1 64.5 L51.5 61.1 L61.2 53.6 L65.8 49.2 L70.3 44.3 L78.1 34.0 L82.5 26.7 L82.4 24.3 L80.7 22.7 L53.1 12.8 L51.9 12.1 L31.4 -18.6 L31.0 -20.2 L31.5 -24.4 L31.0 -25.7 L29.9 -26.7 L28.5 -27.0 L-7.8 -26.8 L-9.2 -25.7 L-9.7 -24.0 L-7.1 -10.7 L-7.1 -9.2 L-26.8 30.6 Z" stroke="#5b4a3d" stroke-width="5" fill="none" stroke-linejoin="round"/><path d="M83.9 17.5 L85.9 17.5 L87.5 16.2 L90.3 8.9 L92.4 1.8 L95.6 -13.6 L96.6 -23.8 L96.5 -25.0 L95.7 -26.2 L93.7 -27.0 L40.7 -27.0 L38.5 -26.1 L37.8 -24.7 L37.3 -21.8 L37.6 -20.0 L55.7 7.1 L56.9 7.8 Z" stroke="#5b4a3d" stroke-width="5" fill="rgba(120,92,70,.85)" stroke-linejoin="round"/></svg>
     FRAGMENTA
   </a>
-  <div class="nav-links">
+  <button class="nav-burger" type="button" aria-label="Otevřít nabídku" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+  <div class="nav-links" id="nav-links">
     <a href="index.html#restauratorka">Restaurátoři</a>
     <a href="index.html#sluzby">Služby</a>
     <a href="index.html#ukazky" class="cur">Ukázky práce</a>
@@ -1097,6 +1098,28 @@
 .service-row.done:hover .idx{ transform:rotate(-8deg) scale(1.18); }
 @media (prefers-reduced-motion:reduce){ .service-row.sr{ opacity:1; transform:none; } .service-row.done:hover{ transform:none; } .service-row.done:hover .idx{ transform:none; } }
 </style><style>.nav{ background:rgba(255,247,240,.58) !important; backdrop-filter:blur(14px) saturate(1.15); -webkit-backdrop-filter:blur(14px) saturate(1.15); border-color:rgba(61,58,74,.06) !important; box-shadow:0 8px 24px rgba(61,58,74,.05) !important; }</style><style>
+.nav-burger{ display:none; width:44px; height:44px; margin:-6px -10px -6px 0; padding:0; border:0; border-radius:50%; background:transparent; cursor:pointer; position:relative; -webkit-tap-highlight-color:transparent; }
+.nav-burger span{ position:absolute; left:12px; right:12px; height:2px; border-radius:2px; background:#3D3A4A; transition:transform .25s ease, opacity .2s ease, top .25s ease; }
+.nav-burger span:nth-child(1){ top:15px; } .nav-burger span:nth-child(2){ top:21px; } .nav-burger span:nth-child(3){ top:27px; }
+.nav-burger[aria-expanded="true"] span:nth-child(1){ top:21px; transform:rotate(45deg); }
+.nav-burger[aria-expanded="true"] span:nth-child(2){ opacity:0; }
+.nav-burger[aria-expanded="true"] span:nth-child(3){ top:21px; transform:rotate(-45deg); }
+.nav-burger:focus-visible{ outline:2px solid #3D3A4A; outline-offset:2px; }
+@media (max-width:640px){
+  .nav-burger{ display:block; }
+  .nav .nav-links{ display:none !important; position:absolute; top:calc(100% + 8px); left:0; right:0; flex-direction:column; gap:0; padding:10px; border-radius:28px; background:#FFF7F0; border:1px solid rgba(61,58,74,.08); box-shadow:0 14px 34px rgba(61,58,74,.14); font-size:13px !important; letter-spacing:.14em; }
+  .nav.open .nav-links{ display:flex !important; }
+  .nav .nav-links a{ padding:15px 20px; border-radius:18px; opacity:1; }
+  .nav .nav-links a:active{ background:rgba(61,58,74,.06); }
+}
+</style><script>(function(){ var n=document.querySelector('.nav'),b=n&&n.querySelector('.nav-burger'); if(!b) return;
+function set(o){ n.classList.toggle('open',o); b.setAttribute('aria-expanded',o?'true':'false'); b.setAttribute('aria-label',o?'Zavřít nabídku':'Otevřít nabídku'); }
+b.addEventListener('click',function(e){ e.stopPropagation(); set(!n.classList.contains('open')); });
+n.querySelectorAll('.nav-links a').forEach(function(a){ a.addEventListener('click',function(){ set(false); }); });
+document.addEventListener('click',function(e){ if(!n.contains(e.target)) set(false); });
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') set(false); });
+window.addEventListener('resize',function(){ if(window.innerWidth>640) set(false); });
+})();</script><style>
 .cats-head{display:flex;flex-direction:column;gap:12px;margin:0 0 36px;max-width:640px}
 .cats-head h2{font-size:clamp(30px,5vw,50px);line-height:1.1;font-weight:500;letter-spacing:-0.01em}
 .cats-head p.lead{color:var(--body);font-size:17px;line-height:1.6}
