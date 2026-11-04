@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Fragmenta — restaurování a konzervace keramiky a porcelánu, Ostrava</title><meta name="description" content="Laboratoř pro konzervaci a restaurování keramických, terakotových a porcelánových artefaktů. Průzkum, archeologická keramika, štuky a kintsugi. Ostrava-Mariánské Hory."><link rel="canonical" href="https://fragmenta-lab.cz/"><meta property="og:type" content="website"><meta property="og:locale" content="cs_CZ"><meta property="og:site_name" content="Fragmenta"><meta property="og:title" content="Fragmenta — restaurování a konzervace keramiky a porcelánu, Ostrava"><meta property="og:description" content="Laboratoř pro konzervaci a restaurování keramických, terakotových a porcelánových artefaktů. Průzkum, archeologická keramika, štuky a kintsugi. Ostrava-Mariánské Hory."><meta property="og:url" content="https://fragmenta-lab.cz/"><meta property="og:image" content="https://fragmenta-lab.cz/og-image.jpg"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Fragmenta", "url": "https://fragmenta-lab.cz/", "image": "https://fragmenta-lab.cz/og-image.jpg", "description": "Laboratoř pro konzervaci a restaurování keramických, terakotových a porcelánových artefaktů. Průzkum, archeologická keramika, štuky a kintsugi. Ostrava-Mariánské Hory.", "founder": {"@type": "Person", "name": "Mgr. Veronika Pluške, DiS."}, "address": {"@type": "PostalAddress", "streetAddress": "Na Fráni Šrámka 5", "postalCode": "709 00", "addressLocality": "Ostrava-Mariánské Hory", "addressCountry": "CZ"}}</script>
+<meta property="og:title" content="Fragmenta – laboratoř pro konzervaci a restaurování keramiky"><meta property="og:description" content="Fragmenta – laboratoř pro konzervaci a restaurování keramických, terakotových a porcelánových artefaktů. Ostrava-Mariánské Hory."><meta property="og:type" content="website"><meta name="theme-color" content="#FCE4CF"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23FCE4CF'/><path d='M14 22 L30 22 L26 46 Q18 44 14 22Z' fill='none' stroke='%233D3A4A' stroke-width='3' stroke-linejoin='round'/><path d='M34 22 L50 22 Q48 40 38 46 Z' fill='%238B6B55'/></svg>">
+<style>
+  @font-face{font-family:'Work Sans';font-weight:400;font-display:swap;src:url(fonty/font001-5cc4.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'Work Sans';font-weight:400;font-display:swap;src:url(fonty/font002-54ef.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Work Sans';font-weight:600;font-display:swap;src:url(fonty/font003-b812.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'Work Sans';font-weight:600;font-display:swap;src:url(fonty/font004-b770.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+  @font-face{font-family:'Jost';font-weight:500;font-display:swap;src:url(fonty/font005-1869.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+  @font-face{font-family:'Jost';font-weight:500;font-display:swap;src:url(fonty/font006-f5f4.woff2) format('woff2');}
+
+  :root{
+    --porcelain:      #FFFFFF;
+    --porcelain-deep: #FFFEFC;
+    --porcelain-line: rgba(46,38,32,0.025);
+    --clay-ink:       #8B8275;
+    --clay-ink-soft:  #C2B9AA;
+    --terracotta:     #F1D6C4;
+    --terracotta-soft:#FAF1EA;
+    --terracotta-pale:#FDF8F3;
+    --latte:          #F8F0E6;
+    --latte-deep:     #E4D3BC;
+    --latte-foam:     #FFFEFC;
+    --white-shade:    #FFFFFF;
+    --white-soft:     #FFFEFC;
+    --blush:          #FFFEFC;
+    --blush-deep:     #FDF7F2;
+    --sage:           #D3D8D3;
+    --gold:           #EFDEBD;
+    --gold-light:     #F4E8CC;
+    --max: 1180px;
+    --pad: clamp(24px, 5vw, 72px);
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; }
+  }
+
+  body{
+    background:var(--porcelain);
+    color:var(--clay-ink);
+    font-family:'Work Sans', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Jost', sans-serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+    color:var(--clay-ink);
+  }
+
+  .eyebrow{
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    font-weight:500;
+    color:var(--terracotta);
+  }
+
+  a{ color:inherit; }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding-left:var(--pad);
+    padding-right:var(--pad);
+  }
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:50;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px var(--pad);
+    background:rgba(243,239,230,0.82);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--porcelain-line);
+  }
+  .nav-mark{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Jost', sans-serif;
+    font-weight:500;
+    font-size:15px;
+    letter-spacing:0.3em;
+    color:#4b3b2f;
+  }
+  .nav-mark svg{ width:38px; height:auto; }
+  .nav-links{
+    display:flex;
+    gap:28px;
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--clay-ink-soft);
+  }
+  .nav-links a{ text-decoration:none; color:#4b3b2f; opacity:0.85; transition:opacity .2s, color .2s; }
+  .nav-links a:hover{ opacity:1; color:var(--terracotta); }
+  @media (max-width:640px){ .nav-links{ display:none; } }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    overflow:hidden;
+    background:var(--porcelain);
+  }
+  .hero-photo{
+    position:absolute; inset:0;
+    z-index:0;
+    background:url('fotky/f001-1c01.jpg') 0 0 / 2008px 1536px repeat;
+    
+  }
+  .hero::before{
+    content:'';
+    position:absolute; inset:0;
+    z-index:1;
+    background:none;
+  }
+  .hero-inner{
+    position:relative;
+    z-index:2;
+    padding:calc(var(--pad) + 60px) var(--pad) var(--pad);
+    color:var(--clay-ink);
+  }
+  .hero{ justify-content:center; }
+  .hero-inner{ text-align:center; display:flex; flex-direction:column; align-items:center; }
+  .hero .eyebrow{
+    margin:30px 0 0;
+    max-width:600px;
+    font-family:'Jost', sans-serif;
+    font-weight:500;
+    font-size:14px;
+    line-height:1.9;
+    letter-spacing:.24em;
+    margin-right:-.24em;
+    text-transform:uppercase;
+    text-wrap:balance;
+    color:#4b3b2f;
+    text-shadow:0 1px 8px rgba(255,255,255,.55);
+  }
+  .hero-headline{ position:relative; display:flex; flex-direction:column; align-items:center; }
+  .hero h1{
+    font-family:'Jost', sans-serif;
+    font-weight:500;
+    font-size:clamp(30px, 5.2vw, 58px);
+    line-height:1;
+    text-transform:uppercase;
+    letter-spacing:.38em;
+    margin-right:-.38em;
+    margin-top:22px;
+    color:#4b3b2f;
+    text-shadow:0 1px 10px rgba(255,255,255,.45);
+  }
+  .hero-crack{ display:block; width:min(180px, 46vw); height:auto; order:-1; }
+  .hero-crack path{
+    fill:none; stroke:#5b4a3d; stroke-width:2.6; stroke-linecap:round; stroke-linejoin:round;
+    stroke-dasharray:640; stroke-dashoffset:640;
+    animation:draw 2s .5s cubic-bezier(.5,0,.2,1) forwards;
+  }
+  .hero-crack path.piece{ fill:rgba(120,92,70,.85); fill-opacity:0; animation:draw 2s .5s cubic-bezier(.5,0,.2,1) forwards, fillIn .9s 2.3s ease forwards; }
+  /* sazba do bloku v šířce nápisu FRAGMENTA */
+  .hero-lockup{ display:inline-flex; flex-direction:column; align-items:center; max-width:100%; }
+  .hero .eyebrow, .hero .hero-foot{ width:0; min-width:100%; max-width:none; }
+  .hero .eyebrow{
+    text-align:center; text-align-last:center; text-wrap:balance;
+    margin:30px 0 0; letter-spacing:.2em; font-size:13px; line-height:1.9;
+  }
+  .hero .hero-foot p{
+    width:100%; max-width:none; text-align:center; text-align-last:center;
+    hyphens:manual; -webkit-hyphens:manual; text-wrap:balance; font-size:15.5px; line-height:1.7;
+  }
+  .hero-lockup .scroll-cue{ margin-top:30px; }
+  @media (max-width:640px){
+    .hero .eyebrow{ text-align:center; text-align-last:center; text-wrap:balance; letter-spacing:.2em; }
+    .hero .hero-foot p{ text-align:center; text-align-last:center; text-wrap:balance; hyphens:manual; }
+    .hero-lockup{ width:100%; }
+    .hero .eyebrow, .hero .hero-foot{ width:100%; }
+  }
+  @keyframes draw{ to{ stroke-dashoffset:0; } }
+  @keyframes fillIn{ to{ fill-opacity:1; } }
+
+  .hero-foot{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:44px;
+    gap:28px;
+    flex-wrap:wrap;
+  }
+  .hero-foot p{
+    max-width:500px;
+    font-size:16px;
+    line-height:1.7;
+    text-wrap:balance;
+    color:#4b3b2f;
+    text-shadow:0 1px 8px rgba(255,255,255,.55);
+  }
+  .scroll-cue{
+    font-family:'Jost', sans-serif;
+    font-size:11px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:#4b3b2f;
+    opacity:0.8;
+  }
+
+  /* ---------- SECTION SHARED ---------- */
+  section{ position:relative; }
+  .section-pad{ padding:120px var(--pad); }
+  @media (max-width:760px){ .section-pad{ padding:80px var(--pad); } }
+
+  .divider{
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+    width:36px;
+    opacity:0.6;
+  }
+
+  /* ---------- INTRO — O FRAGMENTĚ (ediční sazba) ---------- */
+  .intro{ background:var(--porcelain); }
+  .intro-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    border-bottom:1px solid var(--porcelain-line);
+    padding-bottom:22px;
+    margin-bottom:56px;
+  }
+  .intro-folio{
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--clay-ink-soft);
+  }
+  .intro-folio b{ color:var(--terracotta); font-weight:600; }
+  .intro-grid{
+    display:grid;
+    grid-template-columns: 1fr 2.1fr;
+    gap:40px;
+    align-items:start;
+  }
+  @media (max-width:760px){ .intro-grid{ grid-template-columns:1fr; gap:24px; } }
+  .intro-side{
+    display:flex;
+    justify-content:flex-start;
+    padding-top:6px;
+  }
+  @media (max-width:760px){ .intro-side{ display:none; } }
+  .intro-copy{
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    font-size:17.5px;
+    line-height:1.9;
+    text-align:justify;
+    hyphens:auto;
+    color:var(--clay-ink-soft);
+    max-width:640px;
+  }
+  .intro-copy p + p{ margin-top:22px; }
+  .intro-copy p:first-of-type{
+    font-variant:small-caps;
+    letter-spacing:0.04em;
+    font-weight:600;
+    color:var(--clay-ink);
+  }
+
+  /* ---------- RESTAURÁTORKA ---------- */
+  .profile{ background:var(--porcelain-deep); }
+  .profile-grid{
+    display:grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap:64px;
+    align-items:start;
+  }
+  @media (max-width:840px){
+    .profile-grid{ grid-template-columns:1fr; gap:40px; }
+  }
+
+  .specimen-card{
+    background:var(--porcelain);
+    border:1px solid var(--porcelain-line);
+    border-radius:2px;
+    padding:32px;
+    color:var(--clay-ink);
+    position:relative;
+  }
+  .specimen-card svg{ width:100%; height:auto; display:block; }
+  .specimen-tag{
+    display:flex;
+    justify-content:space-between;
+    font-family:'Jost', sans-serif;
+    font-size:10.5px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--clay-ink-soft);
+    margin-top:22px;
+    padding-top:16px;
+    border-top:1px solid var(--porcelain-line);
+  }
+
+  .profile-text .eyebrow{ margin-bottom:14px; }
+  .profile-text h2{
+    font-family:'Work Sans', sans-serif;
+    font-variant:small-caps;
+    font-weight:600;
+    letter-spacing:0.04em;
+    font-size:clamp(19px, 2.2vw, 24px);
+    margin-bottom:6px;
+  }
+  .profile-role{
+    font-family:'Jost', sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:13.5px;
+    letter-spacing:0.04em;
+    color:var(--terracotta);
+    margin-bottom:26px;
+  }
+  .profile-text p{ color:var(--clay-ink-soft); font-size:16.5px; }
+  .profile-text p + p{ margin-top:16px; }
+  .profile-credentials{
+    margin-top:30px;
+    padding-top:24px;
+    border-top:1px solid var(--porcelain-line);
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .cred{
+    display:flex;
+    gap:14px;
+    font-size:14.5px;
+    color:var(--clay-ink);
+  }
+  .cred svg{ flex:none; width:22px; height:22px; margin-top:0px; }
+
+  /* ---------- SLUŽBY ---------- */
+  .services{ background:var(--porcelain); }
+  .services.section-pad{ padding-top:84px; padding-bottom:32px; }
+  .services-head{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:48px;
+    margin-bottom:26px;
+  }
+  @media (max-width:760px){
+    .services-head{ grid-template-columns:1fr; gap:12px; margin-bottom:20px; }
+    .services.section-pad{ padding-top:64px; padding-bottom:40px; }
+    .service-row{ padding:8px 0; }
+  }
+  .services-head .eyebrow{ margin-bottom:8px; }
+  .services-head h2{ font-size:clamp(26px, 3.2vw, 36px); line-height:1.1; }
+  .services-head .lead{
+    font-size:16.5px;
+    color:var(--clay-ink-soft);
+    align-self:end;
+  }
+
+  .service-index{
+    border-top:1px solid var(--porcelain-line);
+  }
+  .service-row{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    padding:10px 0;
+    border-bottom:1px solid var(--porcelain-line);
+    transition:padding-left .25s ease;
+  }
+  .service-row:hover{ padding-left:10px; }
+  .service-row .idx{
+    flex:0 0 auto;
+    width:22px;
+    height:22px;
+    color:var(--terracotta);
+  }
+  .service-row .idx svg{ width:100%; height:100%; }
+  .service-row .title{
+    font-family:'Jost', sans-serif;
+    font-weight:500;
+    font-size:16.5px;
+    color:var(--clay-ink);
+    flex:0 0 auto;
+    max-width:66%;
+    line-height:1.3;
+  }
+  .service-row .title em{
+    font-style:normal;
+    font-family:'Jost', sans-serif;
+    font-weight:400;
+    font-size:11px;
+    color:var(--gold);
+    margin-left:10px;
+    text-transform:uppercase;
+    letter-spacing:0.07em;
+  }
+  .service-row .leaders{
+    flex:1 1 auto;
+    overflow:hidden;
+    white-space:nowrap;
+    color:var(--porcelain-line);
+    letter-spacing:4px;
+    font-size:15px;
+    transform:translateY(-2px);
+  }
+  .service-row .leaders::after{
+    content:'· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·';
+  }
+  @media (max-width:640px){
+    .service-row{ flex-wrap:wrap; }
+    .service-row .title{ max-width:100%; order:1; }
+    .service-row .idx{ order:0; }
+    .service-row .leaders{ display:none; }
+  }
+
+  /* ---------- UKÁZKY PRÁCE ---------- */
+  img{ max-width:100%; display:block; }
+  .showcase{ background:var(--porcelain-deep); }
+  .showcase.section-pad{ padding-top:64px; padding-bottom:64px; }
+  .showcase-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-auto-rows:44vw;
+    gap:0;
+    margin-top:0;
+  }
+  .showcase-item{ overflow:hidden; }
+  .showcase-item img{
+    width:100%; height:100%;
+    object-fit:cover;
+    transition:transform .6s ease;
+  }
+  .showcase-item:hover img{ transform:scale(1.045); }
+  @media (min-width:761px){
+    .showcase-grid{ display:block; }
+    .showcase-row{ display:flex; overflow:hidden; }
+    .showcase-row .showcase-item{ height:100%; min-width:0; }
+    .showcase-item.t-feature{ grid-column:span 3; grid-row:span 2; }
+    .showcase-item.t-big{ grid-column:span 2; grid-row:span 2; }
+    .showcase-item.t-wide{ grid-column:span 2; grid-row:span 1; }
+    .showcase-item.t-reg{ grid-column:span 1; grid-row:span 1; }
+    .showcase-item.t-tall{ grid-column:span 1; grid-row:span 2; }
+  }
+  @media (max-width:760px){
+    .showcase-grid{ grid-template-columns:repeat(2, 1fr); grid-auto-rows:44vw; }
+  }
+  @media (max-width:480px){
+    .showcase-grid{ grid-template-columns:1fr; grid-auto-rows:62vw; }
+  }
+
+  /* ---------- KONTAKT / FOOTER ---------- */
+  .contact{ background:var(--porcelain-deep); }
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:48px;
+    align-items:end;
+  }
+  @media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; gap:36px; } }
+  .contact h2{
+    font-size:clamp(30px, 5vw, 50px);
+    letter-spacing:-0.01em;
+  }
+  .contact .eyebrow{ margin-bottom:16px; }
+  .contact-details{
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    line-height:2.1;
+    color:var(--clay-ink-soft);
+  }
+  .contact-row{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    padding:6px 0;
+  }
+  .contact-row svg{
+    flex:none;
+    width:20px; height:20px;
+    margin-top:7px;
+    color:var(--clay-ink);
+  }
+  .contact-details a{ text-decoration:none; border-bottom:1px solid var(--porcelain-line); }
+  .contact-details a:hover{ border-color:var(--terracotta); color:var(--terracotta); }
+
+  footer{
+    background:var(--porcelain);
+    border-top:1px solid var(--porcelain-line);
+    padding:26px var(--pad) 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:'Jost', sans-serif;
+    font-size:11px;
+    letter-spacing:0.08em;
+    color:var(--clay-ink-soft);
+  }
+  footer svg{ width:14px; height:14px; color:var(--terracotta); }
+
+  :focus-visible{
+    outline:2px solid var(--terracotta);
+    outline-offset:3px;
+  }
+
+  /* ---------- LIGHTBOX (náhled fotky) ---------- */
+  .showcase-item{ cursor:zoom-in; }
+  .lightbox{
+    position:fixed; inset:0; z-index:100;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(250,247,241,0.97);
+    opacity:0; visibility:hidden;
+    transition:opacity .25s ease, visibility .25s ease;
+  }
+  .lightbox.open{ opacity:1; visibility:visible; }
+  .lightbox-img{
+    max-width:92vw; max-height:86vh;
+    object-fit:contain;
+    box-shadow:0 12px 50px rgba(60,45,30,0.18);
+    transform:scale(.98);
+    transition:transform .25s ease;
+  }
+  .lightbox.open .lightbox-img{ transform:scale(1); }
+  .lb-btn{
+    position:absolute;
+    background:none; border:0; cursor:pointer;
+    color:var(--clay-ink);
+    width:52px; height:52px;
+    display:flex; align-items:center; justify-content:center;
+    opacity:.7; transition:opacity .2s;
+  }
+  .lb-btn:hover{ opacity:1; }
+  .lb-btn svg{ width:26px; height:26px; }
+  .lb-close{ top:16px; right:16px; }
+  .lb-prev{ left:10px; top:50%; transform:translateY(-50%); }
+  .lb-next{ right:10px; top:50%; transform:translateY(-50%); }
+  .lb-count{
+    position:absolute; bottom:18px; left:50%; transform:translateX(-50%);
+    font-family:'Jost', sans-serif; font-size:12px; letter-spacing:.12em;
+    color:var(--clay-ink-soft);
+  }
+  .lb-btn{ font-family:'Work Sans', sans-serif; }
+  body.lb-lock{ overflow:hidden; }
+  @media (max-width:640px){
+    .lb-prev, .lb-next{ top:auto; bottom:6px; transform:none; }
+    .lb-prev{ left:10px; } .lb-next{ right:10px; }
+  }
+
+  /* ---------- SJEDNOCENÁ TYPOGRAFIE: Jost (nadpisy, popisky) + Work Sans (text) ---------- */
+  :root{ --ink:#4b3b2f; --body:#75675a; --label:#9a8878; }
+  body{ color:var(--body); }
+  h1,h2,h3,strong,b{ color:var(--ink); }
+  strong,b{ font-family:'Work Sans', sans-serif; font-weight:600; }
+  .eyebrow{ color:var(--label); font-size:12.5px; }
+  .nav-links{ font-size:13px; letter-spacing:.16em; }
+  .nav-links a{ color:var(--ink); }
+  .intro-folio{ color:var(--label); font-size:12.5px; }
+  .intro-folio b{ color:var(--ink); font-family:'Jost', sans-serif; font-weight:500; }
+  .intro-copy{ color:var(--body); text-align:left; hyphens:manual; font-size:17px; line-height:1.8; }
+  .intro-copy p:first-of-type{
+    font-family:'Jost', sans-serif; font-variant:normal; font-weight:500;
+    font-size:clamp(20px, 2.2vw, 25px); line-height:1.45; letter-spacing:-0.005em; color:var(--ink);
+  }
+  .profile-text h2{
+    font-family:'Jost', sans-serif; font-variant:normal; font-weight:500;
+    letter-spacing:-0.01em; font-size:clamp(24px, 3vw, 32px); line-height:1.15; color:var(--ink);
+  }
+  .profile-role{ color:var(--label); font-size:15px; letter-spacing:.06em; }
+  .profile-text p, .services-head .lead{ color:var(--body); }
+  .specimen-tag, footer, .lb-count{ color:var(--label); }
+  .cred{ color:var(--ink); }
+  .service-row .title{ color:var(--ink); }
+  .service-row .title em{ color:var(--label); }
+  .contact h2{ color:var(--ink); }
+  .contact-details{ font-family:'Work Sans', sans-serif; font-size:15.5px; line-height:2; color:var(--body); letter-spacing:0; }
+  .contact-details a{ color:var(--ink); }
+  .scroll-cue{ font-size:12px; }
+
+  /* ---------- JEDNOTNÉ ROZVRŽENÍ SEKCÍ: levý sloupec (popisek) + pravý sloupec (obsah) ---------- */
+  .sec-grid, .profile-grid{
+    display:grid;
+    grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+    column-gap:clamp(40px, 6vw, 96px);
+    row-gap:32px;
+    align-items:start;
+  }
+  .intro.section-pad, .profile.section-pad, .services.section-pad{ padding-top:104px; padding-bottom:104px; }
+  .intro-head, .intro-side{ display:none; }
+  .sec-label{ display:flex; flex-direction:column; gap:14px; }
+  .intro-copy{ max-width:none; }
+  .specimen-card{ max-width:420px; width:100%; }
+  .services-grid .sec-label .eyebrow{ margin-bottom:0; }
+  .services-grid .sec-label h2{ font-size:clamp(28px, 3.2vw, 40px); line-height:1.12; }
+  .services-grid .sec-label .lead{ margin-top:10px; max-width:420px; align-self:auto; font-size:16px; }
+  .service-row{ padding:13px 0; }
+  .profile-text p.profile-role{ margin-bottom:22px; }
+  @media (max-width:840px){
+    .sec-grid, .profile-grid{ grid-template-columns:1fr; row-gap:28px; }
+    .intro.section-pad, .profile.section-pad, .services.section-pad{ padding-top:72px; padding-bottom:72px; }
+    .specimen-card{ max-width:340px; }
+  }
+  .service-row .title{ max-width:none; flex:1 1 auto; }
+  .service-row .leaders{ display:none; }
+  @media (max-width:640px){ .service-row{ flex-wrap:nowrap; align-items:flex-start; } .service-row .idx{ margin-top:2px; } }
+  .profile-grid{ grid-template-columns:minmax(0,7fr) minmax(0,5fr); }
+  .profile-grid .profile-text{ order:1; }
+  .profile-grid .specimen-card{ order:2; justify-self:end; }
+  @media (max-width:840px){
+    .profile-grid{ grid-template-columns:1fr; }
+    .profile-grid .specimen-card{ order:0; justify-self:start; }
+    .profile-grid .profile-text{ order:1; }
+  }
+
+  /* ---------- NOVÝ NÁHLED FOTEK ---------- */
+  .lightbox{ display:none !important; }
+  .lbx{
+    position:fixed; inset:0; z-index:100;
+    display:grid; grid-template-columns:72px minmax(0,1fr) 72px; grid-template-rows:auto 1fr auto;
+    background:rgba(38,30,25,.985); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    opacity:0; visibility:hidden; transition:opacity .3s ease, visibility .3s ease;
+    color:#f3ede4; font-family:'Jost', sans-serif;
+  }
+  .lbx.open{ opacity:1; visibility:visible; }
+  .lbx-top{ grid-column:1 / -1; display:flex; justify-content:space-between; align-items:center; padding:18px 22px 6px 28px; }
+  .lbx-count{ font-weight:500; font-size:13px; letter-spacing:.2em; color:#cdbfae; }
+  .lbx-close, .lbx-nav{ background:none; border:1px solid rgba(243,237,228,.28); color:#f3ede4; width:44px; height:44px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background .2s, border-color .2s; }
+  .lbx-close:hover, .lbx-nav:hover{ background:rgba(243,237,228,.12); border-color:rgba(243,237,228,.6); }
+  .lbx svg{ width:20px; height:20px; }
+  .lbx-nav{ align-self:center; justify-self:center; }
+  .lbx-stage{ grid-column:2; min-height:0; display:flex; align-items:center; justify-content:center; padding:8px 0; }
+  .lbx-img{ max-width:100%; max-height:100%; object-fit:contain; display:block; box-shadow:0 20px 70px rgba(0,0,0,.45); }
+  .lbx-img.swap{ animation:lbxIn .35s ease; }
+  @keyframes lbxIn{ from{ opacity:0; transform:translateX(14px); } to{ opacity:1; transform:none; } }
+  .lbx-bottom{ grid-column:1 / -1; padding:12px 28px 20px; display:flex; flex-direction:column; align-items:center; gap:12px; }
+  .lbx-cap{ font-family:'Work Sans', sans-serif; font-size:15px; color:#e6dccf; text-align:center; min-height:22px; }
+  .lbx-thumbs{ display:flex; gap:6px; overflow-x:auto; max-width:100%; padding:4px; scrollbar-width:none; }
+  .lbx-thumbs::-webkit-scrollbar{ display:none; }
+  .lbx-thumbs button{ flex:none; width:64px; height:46px; padding:0; border:0; background:none; cursor:pointer; opacity:.45; outline:2px solid transparent; outline-offset:2px; transition:opacity .2s, outline-color .2s; }
+  .lbx-thumbs button.on{ opacity:1; outline-color:#f3ede4; }
+  .lbx-thumbs img{ width:100%; height:100%; object-fit:cover; display:block; }
+  @media (max-width:640px){
+    .lbx{ grid-template-columns:minmax(0,1fr); }
+    .lbx-stage{ grid-column:1; padding:8px 12px; }
+    .lbx-nav{ display:none; }
+    .lbx-thumbs button{ width:52px; height:38px; }
+  }
+
+  /* ---------- NÁHLED: průhledné zamlžené pozadí ---------- */
+  .lbx{ background:rgba(250,247,241,.38); backdrop-filter:blur(9px) saturate(1.1); -webkit-backdrop-filter:blur(9px) saturate(1.1); color:var(--ink); }
+  .lbx-count{ color:var(--ink); }
+  .lbx-close, .lbx-nav{ border-color:rgba(75,59,47,.35); color:var(--ink); background:rgba(255,255,255,.35); }
+  .lbx-close:hover, .lbx-nav:hover{ background:rgba(255,255,255,.7); border-color:rgba(75,59,47,.6); }
+  .lbx-img{ box-shadow:0 24px 80px rgba(60,45,30,.28); }
+  .lbx-cap{ color:var(--ink); }
+  .lbx{ grid-template-rows:auto 1fr auto; }
+  .lbx-bottom{ padding:10px 28px 26px; }
+
+  .showcase-filter{ display:flex; flex-wrap:wrap; gap:6px 26px; justify-content:center; margin:0 0 28px; }
+  .showcase-filter button{ font-family:'Jost',sans-serif; font-weight:500; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink); opacity:.55; background:none; border:0; border-bottom:1.5px solid transparent; padding:8px 2px; cursor:pointer; transition:opacity .2s,border-color .2s; }
+  .showcase-filter button i{ font-style:normal; font-size:11px; letter-spacing:.05em; margin-left:4px; opacity:.7; }
+  .showcase-filter button:hover{ opacity:.85; }
+  .showcase-filter button.on{ opacity:1; border-bottom-color:var(--ink); }
+  .showcase-grid{ transition:opacity .22s ease; }
+  .showcase-grid.fading{ opacity:0; }
+  .showcase-item.is-hidden{ display:none; }
+  @media (max-width:560px){ .showcase-filter{ gap:2px 16px; } .showcase-filter button{ font-size:12px; letter-spacing:.1em; } }
+  /* ================= PASTELOVÁ VARIANTA ================= */
+  :root{
+    --ink:#3D3A4A; --body:#5E5A6C; --label:#8A8498;
+    --bg:#FFF7F0; --mint:#DCF0E6; --peach:#FCE4CF; --lilac:#E8DFF6; --butter:#FBF0CC;
+    --terracotta:#D88F70; --porcelain:#FFF7F0; --porcelain-deep:#FFF7F0; --porcelain-line:rgba(61,58,74,.12);
+  }
+  body{ background:var(--bg); color:var(--body); }
+  h1,h2,h3,strong,b{ color:var(--ink); }
+  h1,h2,h3{ font-family:'Jost',sans-serif; letter-spacing:0; }
+  .eyebrow, .intro-folio, .scroll-cue, .specimen-tag, .nav-links, .showcase-filter button{ font-family:'Work Sans',sans-serif; font-weight:600; }
+  .eyebrow{ color:var(--label); }
+  section, .intro, .profile, .services, .showcase, .contact, footer{ background:transparent; }
+
+  /* NAV – plovoucí pilulka */
+  .nav{ left:clamp(12px,2vw,28px); right:clamp(12px,2vw,28px); top:14px; border-radius:60px; padding:12px 26px;
+        background:rgba(255,247,240,.82); border:1px solid rgba(61,58,74,.08); box-shadow:0 10px 30px rgba(61,58,74,.07); }
+  .nav-mark{ color:var(--ink); font-size:15px; letter-spacing:.22em; }
+  .nav-links a{ color:var(--ink); }
+  .nav-links a:hover{ color:var(--terracotta); }
+
+  /* HERO */
+  .hero{ background:var(--bg); }
+  .hero-photo{ opacity:.55; }
+  .hero::before{ background:
+      radial-gradient(520px 420px at 14% 26%, rgba(220,208,240,.95), transparent 70%),
+      radial-gradient(560px 460px at 88% 20%, rgba(247,211,194,.9), transparent 70%),
+      radial-gradient(520px 420px at 82% 88%, rgba(207,232,220,.95), transparent 70%),
+      radial-gradient(420px 360px at 12% 86%, rgba(248,231,181,.9), transparent 70%); }
+  .hero h1{ text-transform:none; letter-spacing:.01em; margin-right:0; font-size:clamp(54px,10vw,128px); color:var(--ink); text-shadow:none; margin-top:18px; }
+  .hero .eyebrow{ color:var(--ink); text-shadow:none; letter-spacing:.16em; font-size:13px; }
+  .hero-foot p{ color:var(--ink); text-shadow:none; font-size:17px; }
+  .scroll-cue{ color:var(--ink); }
+  .hero-crack path{ stroke:#5b4a3d; }
+
+  /* SEKCE – karty */
+  .intro-copy{ background:var(--mint); border-radius:56px; padding:clamp(28px,5vw,64px); color:var(--ink); }
+  .intro-copy p:first-of-type{ font-family:'Jost',sans-serif; color:var(--ink); }
+  .intro-copy p{ color:var(--ink); }
+  .sec-label .intro-folio{ display:inline-flex; background:var(--butter); color:var(--ink); border-radius:40px; padding:8px 20px; letter-spacing:.14em; align-self:flex-start; }
+  .intro-folio b{ font-family:'Jost',sans-serif; color:var(--ink); }
+
+  .profile-text{ background:var(--lilac); border-radius:56px; padding:clamp(28px,5vw,64px); }
+  .profile-text p, .profile-text .cred{ color:var(--ink); }
+  .profile-role{ color:var(--ink); opacity:.75; }
+  .profile-credentials{ border-top-color:rgba(61,58,74,.18); }
+  .specimen-card{ background:var(--butter); border:0; border-radius:56px; padding:36px; max-width:420px; }
+  .specimen-card path[stroke^="rgba"]{ stroke:rgba(61,58,74,.45); }
+
+  /* SLUŽBY – pilulky */
+  .service-index{ border:0; display:flex; flex-direction:column; gap:12px; }
+  .service-row{ border:0; border-radius:60px; padding:18px 30px; background:var(--mint); }
+  .service-row:nth-child(4n+2){ background:var(--peach); }
+  .service-row:nth-child(4n+3){ background:var(--lilac); }
+  .service-row:nth-child(4n+4){ background:var(--butter); }
+  .service-row .idx{ color:var(--ink); }
+  .service-row .title{ color:var(--ink); font-size:17px; font-family:'Work Sans',sans-serif; font-weight:600; }
+  .service-row .title em{ color:var(--ink); opacity:.65; font-family:'Work Sans',sans-serif; }
+  .services-head .lead, .services-grid .sec-label .lead{ color:var(--body); }
+
+  /* UKÁZKY – zaoblené dlaždice, pilulkový filtr */
+  .showcase-filter{ gap:10px; }
+  .showcase-filter button{ opacity:1; letter-spacing:.08em; font-size:13px; padding:11px 22px; border-radius:40px; border:0; background:var(--peach); color:var(--ink); }
+  .showcase-filter button:nth-child(4n+2){ background:var(--mint); }
+  .showcase-filter button:nth-child(4n+3){ background:var(--lilac); }
+  .showcase-filter button:nth-child(4n+4){ background:var(--butter); }
+  .showcase-filter button.on{ outline:2.5px solid var(--ink); outline-offset:2px; border-bottom:0; }
+  .showcase-filter button:hover{ opacity:.85; }
+  .showcase-item{ padding:6px; }
+  .showcase-item img{ border-radius:30px; }
+  @media (max-width:760px){ .showcase-item{ padding:4px; } .showcase-item img{ border-radius:22px; } }
+
+  /* KONTAKT */
+  .contact .wrap{ background:var(--peach); border-radius:56px; padding:clamp(28px,5vw,72px) clamp(24px,5vw,72px); max-width:calc(var(--max) - 2*var(--pad) + 2*clamp(24px,5vw,72px)); }
+  .contact-details, .contact-details a{ color:var(--ink); }
+  .contact-details a{ border-bottom-color:rgba(61,58,74,.25); }
+  .contact-row svg{ color:var(--ink); }
+  footer{ border-top:0; color:var(--label); }
+  footer svg{ color:var(--terracotta); }
+  :focus-visible{ outline-color:var(--ink); }
+
+  /* NÁHLED */
+  .lbx{ background:rgba(255,247,240,.55); }
+  .lbx-img{ border-radius:28px; }
+  .lbx-thumbs img{ border-radius:10px; }
+.hero{min-height:auto;display:block;background:var(--bg);overflow:hidden}
+.hero::before,.hero::after{display:none}.hero-photo{display:none}
+.h2x{max-width:1240px;margin:0 auto;padding:128px var(--pad) 72px;position:relative}
+.h2x h1{font-family:'Jost',sans-serif;font-weight:500;text-transform:none;letter-spacing:0;color:var(--ink);text-shadow:none;margin:0;line-height:1}
+.h2x .eyebrow{color:var(--ink);text-shadow:none;letter-spacing:.16em;font-size:13px;margin:0;width:auto;text-align:left;text-align-last:left}
+.h2x p.lead{font-size:18px;line-height:1.65;color:var(--ink);max-width:520px;margin:0}
+.h2x .hero-crack path{stroke:#5b4a3d}
+.h2x .pic{background-size:cover;background-position:center;position:relative;overflow:hidden}
+.h2x .tint{position:absolute;inset:0}
+.h2x .chip{position:absolute;font-family:'Work Sans',sans-serif;font-weight:600;font-size:15px;color:var(--ink);padding:9px 20px;border-radius:40px}
+
+.hB{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:16px;height:min(86svh,760px);min-height:560px;padding-top:112px;box-sizing:content-box}
+.hB>*{border-radius:48px;position:relative;overflow:hidden}
+.hB .t{grid-column:1/8;grid-row:1/3;background:var(--peach);padding:clamp(28px,4.5vw,64px);display:flex;flex-direction:column;justify-content:flex-end;gap:18px}
+.hB h1{font-size:clamp(52px,8vw,112px)}
+.hB .hero-crack{position:absolute;right:8%;top:8%;width:min(130px,22%)}
+.hB .p1{grid-column:8/13;grid-row:1/2}
+.hB .p2{grid-column:8/11;grid-row:2/3}
+.hB .m{grid-column:11/13;grid-row:2/3;background:var(--mint);display:flex;align-items:center;justify-content:center;font-family:'Jost',sans-serif;font-weight:500;font-size:clamp(14px,1.6vw,22px);text-align:center;padding:14px;color:var(--ink);line-height:1.25}
+@media(max-width:840px){.hB .hero-crack{position:static;width:110px;align-self:flex-start}.hB{display:flex;flex-direction:column;height:auto;min-height:0}.hB .t{min-height:420px}.hB .p1,.hB .p2{height:240px}.hB .m{padding:28px}}
+  /* zlatá spára v ikoně Kintsugi – čitelná na pastelu */
+  .service-row .idx svg path[stroke="var(--gold)"]{ stroke:#B8872B; stroke-width:1.9; }
+  .service-row .idx{ width:28px; height:28px; }
+
+  /* nápis Fragmenta zarovnaný do bloku s textem */
+  .hB .t{ align-items:flex-start; }
+  .hB .tx{ display:flex; flex-direction:column; gap:18px; align-self:flex-start; max-width:100%; }
+  .hB .tx h1{ font-size:96px; white-space:nowrap; width:max-content; max-width:none; }
+  .hB .tx .eyebrow{ max-width:none; }
+  .hB .tx p.lead{ max-width:520px; }
+  .service-row:first-child .idx{ color:#3D3A4A; }
+  .service-row:nth-child(n){ background:var(--mint); }
+  .service-row:nth-child(2),.service-row:nth-child(7){ background:var(--lilac) !important; }
+  .service-row:nth-child(3),.service-row:nth-child(6){ background:var(--butter) !important; }
+  .service-row:nth-child(4),.service-row:nth-child(8){ background:var(--peach) !important; }
+  .service-row:nth-child(1),.service-row:nth-child(5),.service-row:nth-child(9){ background:var(--mint) !important; }
+  .service-row:nth-child(1){ background:var(--peach) !important; }
+  .service-row:nth-child(8){ background:var(--butter) !important; }
+
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C79E4F"/>
+      <stop offset="100%" stop-color="#AD833A"/>
+    </linearGradient>
+    <linearGradient id="whiteGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E8DCC6"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<nav class="nav">
+  <a class="nav-mark" href="#hero" aria-label="Fragmenta – zpět na úvod">
+    <svg viewBox="-108 -38 216 126" aria-hidden="true"><path d="M-93.7 -27.0 L-95.0 -26.7 L-95.9 -26.0 L-96.6 -23.8 L-95.6 -13.5 L-92.5 1.6 L-87.7 15.7 L-84.9 22.1 L-78.2 33.8 L-70.2 44.5 L-61.3 53.4 L-56.4 57.6 L-46.3 64.4 L-40.7 67.4 L-33.6 70.5 L-32.2 70.6 L-31.1 70.1 L-30.0 68.8 L-29.8 67.4 L-32.9 29.4 L-13.4 -10.0 L-13.3 -11.4 L-16.4 -25.7 L-17.5 -26.6 L-18.9 -27.0 Z" stroke="#5b4a3d" stroke-width="5" fill="none" stroke-linejoin="round"/><path d="M-23.4 71.8 L-22.9 73.2 L-21.9 74.1 L-18.1 75.2 L-6.1 76.8 L0.1 77.0 L11.9 76.2 L18.1 75.2 L29.5 72.1 L35.4 69.8 L46.1 64.5 L51.5 61.1 L61.2 53.6 L65.8 49.2 L70.3 44.3 L78.1 34.0 L82.5 26.7 L82.4 24.3 L80.7 22.7 L53.1 12.8 L51.9 12.1 L31.4 -18.6 L31.0 -20.2 L31.5 -24.4 L31.0 -25.7 L29.9 -26.7 L28.5 -27.0 L-7.8 -26.8 L-9.2 -25.7 L-9.7 -24.0 L-7.1 -10.7 L-7.1 -9.2 L-26.8 30.6 Z" stroke="#5b4a3d" stroke-width="5" fill="none" stroke-linejoin="round"/><path d="M83.9 17.5 L85.9 17.5 L87.5 16.2 L90.3 8.9 L92.4 1.8 L95.6 -13.6 L96.6 -23.8 L96.5 -25.0 L95.7 -26.2 L93.7 -27.0 L40.7 -27.0 L38.5 -26.1 L37.8 -24.7 L37.3 -21.8 L37.6 -20.0 L55.7 7.1 L56.9 7.8 Z" stroke="#5b4a3d" stroke-width="5" fill="rgba(120,92,70,.85)" stroke-linejoin="round"/></svg>
+    FRAGMENTA
+  </a>
+  <div class="nav-links">
+    <a href="#restauratorka">Restaurátoři</a>
+    <a href="#sluzby">Služby</a>
+    <a href="#ukazky">Ukázky práce</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</nav>
+
+<header class="hero" id="hero"><div class="h2x hB"><div class="t"><svg class="hero-crack" viewBox="-108 -38 216 126" aria-hidden="true"><path pathLength="640" d="M-93.7 -27.0 L-95.0 -26.7 L-95.9 -26.0 L-96.6 -23.8 L-95.6 -13.5 L-92.5 1.6 L-87.7 15.7 L-84.9 22.1 L-78.2 33.8 L-70.2 44.5 L-61.3 53.4 L-56.4 57.6 L-46.3 64.4 L-40.7 67.4 L-33.6 70.5 L-32.2 70.6 L-31.1 70.1 L-30.0 68.8 L-29.8 67.4 L-32.9 29.4 L-13.4 -10.0 L-13.3 -11.4 L-16.4 -25.7 L-17.5 -26.6 L-18.9 -27.0 Z" /><path pathLength="640" d="M-23.4 71.8 L-22.9 73.2 L-21.9 74.1 L-18.1 75.2 L-6.1 76.8 L0.1 77.0 L11.9 76.2 L18.1 75.2 L29.5 72.1 L35.4 69.8 L46.1 64.5 L51.5 61.1 L61.2 53.6 L65.8 49.2 L70.3 44.3 L78.1 34.0 L82.5 26.7 L82.4 24.3 L80.7 22.7 L53.1 12.8 L51.9 12.1 L31.4 -18.6 L31.0 -20.2 L31.5 -24.4 L31.0 -25.7 L29.9 -26.7 L28.5 -27.0 L-7.8 -26.8 L-9.2 -25.7 L-9.7 -24.0 L-7.1 -10.7 L-7.1 -9.2 L-26.8 30.6 Z" /><path pathLength="640" class="piece" d="M83.9 17.5 L85.9 17.5 L87.5 16.2 L90.3 8.9 L92.4 1.8 L95.6 -13.6 L96.6 -23.8 L96.5 -25.0 L95.7 -26.2 L93.7 -27.0 L40.7 -27.0 L38.5 -26.1 L37.8 -24.7 L37.3 -21.8 L37.6 -20.0 L55.7 7.1 L56.9 7.8 Z" /></svg><div class="tx"><h1>Fragmenta</h1><p class="eyebrow">Laboratoř pro konzervaci a&nbsp;restaurování keramických materiálů</p><p class="lead">Konzervace, restaurování a&nbsp;materiálový průzkum keramických, terakotových a&nbsp;porcelánových artefaktů — archeologických nálezů i&nbsp;památkově chráněných předmětů.</p><a class="hero-down" href="#o-laboratori" aria-label="Více o laboratoři níže"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a></div></div>
+<div class="pic p1" style="background-image:url(fotky/f002-daeb.jpg)"></div><div class="pic p2" style="background-image:url(fotky/f003-52e7.jpg);background-position:50% 50%"></div><div class="m">Střep<br>po střepu</div></div></header>
+
+<section class="intro section-pad" id="o-laboratori">
+  <div class="wrap">
+    <div class="intro-grid sec-grid">
+      <div class="sec-label"><span class="intro-folio">O&nbsp;laboratoři</span><div class="intro-mosaic"><figure class="m-tall"><img src="fotky/f004-4e8b.jpg" alt="Detail modře malovaného džbánu" loading="lazy"></figure><figure class="m-top"><img src="fotky/f005-fc2d.jpg" alt="Konsolidace nádoby injekční stříkačkou" loading="lazy"></figure><div class="specimen-card">
+      <svg viewBox="0 0 320 340" aria-hidden="true">
+        <path d="M160 20 C 130 20 118 40 120 62 C 96 78 82 118 84 168 C 86 226 108 276 160 296 C 212 276 234 226 236 168 C 238 118 224 78 200 62 C 202 40 190 20 160 20 Z" fill="none" stroke="rgba(74,64,52,0.18)" stroke-width="1.4"/>
+        <path d="M120 62 L 200 62" stroke="rgba(74,64,52,0.18)" stroke-width="1.4"/>
+        <path d="M96 120 C 118 130, 112 150, 132 158 C 148 164, 142 184, 160 190 C 176 196, 172 214, 192 222 C 206 228, 204 244, 222 252" fill="none" stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M108 92 C 118 98, 116 108, 128 112" fill="none" stroke="url(#goldGrad)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </div></div></div>
+      <div class="intro-copy">
+        <p>Fragmenta je odborná laboratoř specializovaná na konzervaci, restaurování a&nbsp;materiálový průzkum keramických artefaktů.</p>
+        <p>Věnuje se odbornému zpracování archeologických nálezů, etnografických a&nbsp;památkově chráněných předmětů z&nbsp;keramiky, terakoty a&nbsp;porcelánu — s&nbsp;využitím tradičních restaurátorských technik i&nbsp;současných vědeckých analytických metod.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="profile section-pad" id="restauratorka">
+  <div class="wrap profile-grid">
+
+    
+
+    <div class="profile-text">
+      <h2>Mgr. Veronika Pluške, DiS.</h2>
+      <p class="profile-role">restaurátorka keramických materiálů</p>
+      <p>Specializuje se na konzervaci a&nbsp;restaurování archeologických nálezů z&nbsp;keramiky a&nbsp;na metodiku rekonstrukce historické keramiky. Zkušenosti čerpá z&nbsp;mezioborových restaurátorských projektů, výstavních příprav a&nbsp;vlastní porcelánové tvorby.</p>
+      <p>Absolvovala praktický kurz tradiční japonské techniky kintsugi v&nbsp;Japonsku, který rozšířil její přístup k&nbsp;etice restaurování i&nbsp;k&nbsp;estetice vizuálních zásahů.</p>
+
+      <div class="profile-credentials">
+        <div class="cred">
+          <svg viewBox="0 0 20 20" fill="none" stroke="var(--terracotta)" stroke-width="1.3"><circle cx="10" cy="4.6" r="3.1"/><rect x="9.1" y="7.6" width="1.8" height="3.6"/><path d="M6.8 11.2 L13.2 11.2 L14.6 15.6 L5.4 15.6 Z" stroke-linejoin="round"/></svg>
+          <span>Držitelka restaurátorské licence Ministerstva kultury ČR pro uměleckořemeslná díla z&nbsp;keramiky</span>
+        </div>
+      </div>
+    </div><div class="profile-tiles"><figure><img src="fotky/f006-e5f6.jpg" alt="Restaurování busty anděla skalpelem" loading="lazy"></figure><figure><img src="fotky/f007-d783.jpg" alt="Restaurátorka při práci na lešení" loading="lazy"></figure></div>
+
+  </div>
+</section>
+
+<section class="services section-pad" id="sluzby">
+  <div class="wrap">
+    <div class="services-grid sec-grid">
+      <div class="sec-label">
+        <p class="eyebrow">Nabídka odborných služeb</p>
+        <h2>Rozsah péče o&nbsp;keramické dědictví</h2>
+        <p class="lead">Hlavním zaměřením je dlouhodobé uchování a&nbsp;čitelná prezentace keramického kulturního dědictví v&nbsp;souladu s&nbsp;aktuálními etickými a&nbsp;metodickými standardy památkové péče a&nbsp;vědecké dokumentace.</p>
+      </div>
+      <div class="service-index">
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M8.7 2.4 L11.3 2.4 L11.3 5.4 C13.2 6.2 14.2 8.3 14 11 C13.8 13.8 12.8 16.2 11.3 17.4 L8.7 17.4 C7.2 16.2 6.2 13.8 6 11 C5.8 8.3 6.8 6.2 8.7 5.4 Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M10.2 5.6 L9 8.2 L11.3 10 L9.1 12.1 L10.6 14.4 L9.6 17.2 M9 8.2 L6.9 8.8 M11.3 10 L13.4 10.5 M9.1 12.1 L6.6 12.7" fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="title">Konzervace a&nbsp;restaurování keramických materiálů</span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.3" cy="8.3" r="4.8" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M11.8 11.8 L15.5 15.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>
+        <span class="title">Vstupní analýza materiálu a&nbsp;laboratorní průzkum</span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="3" y="6" width="14" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="10" cy="11.2" r="2.8" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M7 6 L8.3 4.2 L11.7 4.2 L13 6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        <span class="title">Dokumentace a&nbsp;fotodokumentace stavu předmětů</span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="3" width="12" height="14" rx="1" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M7 7.2 L13 7.2 M7 10.2 L13 10.2 M7 13.2 L10.5 13.2" stroke="currentColor" stroke-width="1.1"/></svg></span>
+        <span class="title">Zpracovávání výstupů pro evidenční systémy, publikace a&nbsp;výstavy</span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 16.5 L3 8.5 L10 3.5 L17 8.5 L17 16.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M3 16.5 L17 16.5" stroke="currentColor" stroke-width="1.3"/></svg></span>
+        <span class="title">Odborné konzultace pro instituce, muzea i&nbsp;archeologické týmy</span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><ellipse cx="10" cy="6" rx="6" ry="2.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M4 6 L4 13 C4 14.2 6.7 15.2 10 15.2 C13.3 15.2 16 14.2 16 13 L16 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span>
+        <span class="title">Zhotovení sádrových a&nbsp;silikonových forem</span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1"><ellipse cx="10" cy="5.2" rx="1.7" ry="3.1"/><ellipse cx="14.16" cy="7.6" rx="1.7" ry="3.1" transform="rotate(60 14.16 7.6)"/><ellipse cx="14.16" cy="12.4" rx="1.7" ry="3.1" transform="rotate(120 14.16 12.4)"/><ellipse cx="10" cy="14.8" rx="1.7" ry="3.1" transform="rotate(180 10 14.8)"/><ellipse cx="5.84" cy="12.4" rx="1.7" ry="3.1" transform="rotate(240 5.84 12.4)"/><ellipse cx="5.84" cy="7.6" rx="1.7" ry="3.1" transform="rotate(300 5.84 7.6)"/></g><circle cx="10" cy="10" r="1.6" fill="currentColor"/></svg></span>
+        <span class="title">Výroba a&nbsp;oprava vnitřních i&nbsp;venkovních dekorativních štuků</span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8 L20.5 8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M3.5 8 C3.7 13.6 7.4 16.2 12 16.2 C16.6 16.2 20.3 13.6 20.5 8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M7.6 9.6 L10.4 12.6 L8.4 14.3 L11.8 15.9" fill="none" stroke="var(--gold)" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="title">Kintsugi opravy nádobí<em>tradiční / moderní</em></span>
+        <span class="leaders"></span>
+      </div>
+      <div class="service-row">
+        <span class="idx"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7 L10 4 L17 7 L10 10 Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M6 8.5 L6 12.3 C6 13.4 7.8 14.3 10 14.3 C12.2 14.3 14 13.4 14 12.3 L14 8.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></span>
+        <span class="title">Vzdělávací workshopy</span>
+        <span class="leaders"></span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+<section class="showcase section-pad" id="ukazky">
+  <div class="wrap">
+    <div class="cats-head"><p class="eyebrow">Ukázky práce</p></div>
+    <div class="cats">
+<a class="cat-card" style="--c:var(--lilac)" href="pruzkum.html"><div class="cat-pics"><span><img src="fotky/f022-6d71.jpg" alt="Mikroskopický snímek – řez vrstvami povrchu" loading="lazy"></span></div><div class="cat-meta"><h3>Průzkum a dokumentace</h3><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+<a class="cat-card" style="--c:var(--peach)" href="archeologie.html"><div class="cat-pics"><span><img src="fotky/f075-2dfd.jpg" alt="Archeologická nádoba po doplnění chybějících částí" loading="lazy"></span></div><div class="cat-meta"><h3>Archeologie</h3><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+<a class="cat-card" style="--c:var(--mint)" href="keramika.html"><div class="cat-pics"><span><img src="fotky/f164-6b6e.jpg" alt="Malovaný porcelánový talíř s čápy po slepení" loading="lazy"></span></div><div class="cat-meta"><h3>Malovaná keramika a porcelán</h3><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+<a class="cat-card w" style="--c:var(--peach)" href="stuky.html"><div class="cat-pics"><span><img src="fotky/f180-92e1.jpg" alt="Štuková kartuš s hlavou putta – čelní pohled před restaurováním" loading="lazy"></span></div><div class="cat-meta"><h3>Štuky, formy</h3><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+<a class="cat-card w" style="--c:var(--butter)" href="kintsugi.html"><div class="cat-pics"><span><img src="fotky/f093-a398.jpg" alt="Kintsugi oprava hrnku zlatou spárou" loading="lazy"></span></div><div class="cat-meta"><h3>Kintsugi</h3><span class="cat-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="contact section-pad" id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Kontakt</p>
+      <h2>Laboratoř<br>Fragmenta</h2>
+    </div>
+    <div class="contact-details">
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21 C12 21 5 14.6 5 9.5 A7 7 0 0 1 19 9.5 C19 14.6 12 21 12 21 Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+        <span>Na Fráni Šrámka 5<br>709&nbsp;00 Ostrava-Mariánské&nbsp;Hory</span>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7 L12 13 L20.5 7"/></svg>
+        <a href="mailto:info@fragmenta-lab.cz">info@fragmenta-lab.cz</a>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4 H9 L10.5 8.5 L8.3 10 C9.3 12.2 11.8 14.7 14 15.7 L15.5 13.5 L20 15 V19 A1.5 1.5 0 0 1 18.5 20.5 C10.5 20 4 13.5 3.5 5.5 A1.5 1.5 0 0 1 5 4 Z"/></svg>
+        <a href="tel:+420605248885">+420 605 248 885</a>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor"/></svg>
+        <a href="https://www.instagram.com/fragmenta_lab_" target="_blank" rel="noopener">@fragmenta_lab_</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Fragmenta</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M3.5 8 L20.5 8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M3.5 8 C3.7 13.6 7.4 16.2 12 16.2 C16.6 16.2 20.3 13.6 20.5 8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M9.4 9.6 L12.2 12.4 L10.6 14 L13.3 15.4" fill="none" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="13.2" y="11.5" width="4.3" height="3.2" rx="0.7" transform="rotate(-8 15.3 13.1)" fill="var(--white-shade)" stroke="currentColor" stroke-width="0.65"/>
+  </svg>
+</footer>
+
+
+
+<style>a.nav-mark{ text-decoration:none; color:inherit; cursor:pointer; } a.nav-mark:hover{ opacity:.75; } a.nav-mark:focus-visible{ outline:2px solid #3D3A4A; outline-offset:4px; border-radius:12px; }</style><style>.hB .hero-down{ display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; background:rgba(255,255,255,.65); color:#3D3A4A; text-decoration:none; align-self:flex-start; margin-top:4px; transition:background .2s, transform .2s; animation:heroBob 2.2s ease-in-out infinite; } .hB .hero-down:hover{ background:#fff; } .hB .hero-down:focus-visible{ outline:2px solid #3D3A4A; outline-offset:3px; } @keyframes heroBob{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(5px);} } @media (prefers-reduced-motion:reduce){ .hB .hero-down{ animation:none; } }</style><style>.service-index{ gap:6px !important; } .service-row{ padding:11px 28px !important; } .services.section-pad{ padding-top:72px !important; padding-bottom:56px !important; }</style><style>.intro-photo{ margin:28px 0 0; max-width:420px; border-radius:44px; overflow:hidden; background:#E8DFF6; box-shadow:0 8px 24px rgba(61,58,74,.08); } .intro-photo img{ display:block; width:100%; height:auto; aspect-ratio:10/9; object-fit:cover; } @media (max-width:900px){ .intro-photo{ max-width:100%; } }</style><style>
+.intro-photo{ display:none !important; }
+.intro-mosaic{ display:grid; grid-template-columns:1.05fr 1fr; grid-template-rows:1fr 1fr; gap:12px; max-width:440px; height:372px; margin-top:28px; }
+.intro-mosaic figure{ margin:0; overflow:hidden; border-radius:34px; background:#E8DFF6; }
+.intro-mosaic img{ width:100%; height:100%; object-fit:cover; display:block; }
+.intro-mosaic .m-tall{ grid-row:1 / span 2; }
+.intro-mosaic .specimen-card{ max-width:none; width:auto; padding:10px; border-radius:34px; display:flex; align-items:center; justify-content:center; order:0; justify-self:stretch; }
+.intro-mosaic .specimen-card svg{ height:100%; width:auto; max-width:100%; }
+@media (max-width:900px){ .intro-mosaic{ max-width:100%; height:auto; aspect-ratio:1.18; } }
+.profile-grid{ grid-template-columns:minmax(0,1fr) !important; }
+.profile-grid .profile-text{ max-width:820px; }
+</style><style>.showcase-filter button:nth-child(1){ background:var(--lilac) !important; } .showcase-filter button:nth-child(2){ background:var(--peach) !important; } .showcase-filter button:nth-child(3){ background:var(--mint) !important; } .showcase-filter button:nth-child(4){ background:var(--peach) !important; } .showcase-filter button:nth-child(5){ background:var(--butter) !important; }</style><style>
+.profile-grid{ grid-template-columns:minmax(0,7fr) minmax(0,4.2fr) !important; gap:24px !important; align-items:stretch; }
+.profile-grid .profile-text{ max-width:none; order:1; }
+.profile-tiles{ order:2; display:grid; grid-template-rows:1fr 1.15fr; gap:12px; min-height:100%; }
+.profile-tiles figure{ margin:0; border-radius:40px; overflow:hidden; background:#DCF0E6; min-height:0; }
+.profile-tiles img{ width:100%; height:100%; object-fit:cover; display:block; }
+@media (max-width:900px){ .profile-grid{ grid-template-columns:1fr !important; } .profile-tiles{ grid-template-rows:none; grid-template-columns:1fr 1fr; } .profile-tiles figure{ aspect-ratio:1/1; } }
+</style><style>.profile-grid .profile-text{ display:flex; flex-direction:column; justify-content:center; }</style><style>
+.service-row.sr{ opacity:0; transform:translateY(18px) scale(.98); }
+.service-row.sr.in{ opacity:1; transform:none; transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0ms); }
+.service-row.sr.in.done{ transition:transform .25s ease, box-shadow .25s ease, padding .25s ease; transition-delay:0ms; }
+.service-row.done:hover{ transform:translateX(8px); box-shadow:0 6px 16px rgba(61,58,74,.09); }
+.service-row .idx{ transition:transform .35s cubic-bezier(.3,1.6,.5,1); }
+.service-row.done:hover .idx{ transform:rotate(-8deg) scale(1.18); }
+@media (prefers-reduced-motion:reduce){ .service-row.sr{ opacity:1; transform:none; } .service-row.done:hover{ transform:none; } .service-row.done:hover .idx{ transform:none; } }
+</style><script>(function(){ try{ var rows=[].slice.call(document.querySelectorAll('.service-row')); if(!rows.length||!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; rows.forEach(function(r,i){ r.classList.add('sr'); r.style.setProperty('--d',(i%9)*70+'ms'); }); var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ var r=e.target; r.classList.add('in'); io.unobserve(r); setTimeout(function(){ r.classList.add('done'); },900); } }); },{threshold:.15}); rows.forEach(function(r){ io.observe(r); }); }catch(e){} })();</script><style>.nav{ background:rgba(255,247,240,.58) !important; backdrop-filter:blur(14px) saturate(1.15); -webkit-backdrop-filter:blur(14px) saturate(1.15); border-color:rgba(61,58,74,.06) !important; box-shadow:0 8px 24px rgba(61,58,74,.05) !important; }</style><style>
+.cats-head{display:flex;flex-direction:column;gap:12px;margin:0 0 36px;max-width:640px}
+.cats-head h2{font-size:clamp(30px,5vw,50px);line-height:1.1;font-weight:500;letter-spacing:-0.01em}
+.cats-head p.lead{color:var(--body);font-size:17px;line-height:1.6}
+.cats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.cat-card{grid-column:span 2;display:flex;flex-direction:column;gap:18px;padding:14px 14px 22px;border-radius:48px;text-decoration:none;color:var(--ink);background:var(--c);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.cat-card.w{grid-column:span 3}
+.cat-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(61,58,74,.12)}
+.cat-pics{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:8px;height:240px}
+.cat-card.w .cat-pics{height:290px}
+.cat-pics img{width:100%;height:100%;object-fit:cover;border-radius:30px;display:block;transition:transform .6s ease}
+.cat-pics img:first-child{grid-row:1/3}
+.cat-card:hover .cat-pics img{transform:scale(1.03)}
+.cat-pics span{overflow:hidden;border-radius:30px;display:block}
+.cat-pics span:first-child{grid-row:1/3}
+.cat-pics span img{border-radius:0}
+.cat-meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 14px}
+.cat-meta h3{font-family:'Jost',sans-serif;font-weight:500;font-size:clamp(21px,2.2vw,28px);line-height:1.12;color:var(--ink);margin:0 0 6px}
+.cat-meta small{font-family:'Work Sans',sans-serif;font-weight:600;font-size:13px;letter-spacing:.06em;color:var(--ink);opacity:.7}
+.cat-go{flex:none;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;transition:transform .3s ease,background .3s ease}
+.cat-card:hover .cat-go{transform:translateX(4px);background:#fff}
+.cat-go svg{width:20px;height:20px}
+@media(max-width:900px){.cats{grid-template-columns:repeat(2,minmax(0,1fr))}.cat-card,.cat-card.w{grid-column:span 1}.cat-card:last-child{grid-column:1/-1}}
+@media(max-width:560px){.cats{grid-template-columns:1fr}.cat-card:last-child{grid-column:auto}.cat-pics,.cat-card.w .cat-pics{height:220px}}
+/* strana podsekce */
+.cat-page.section-pad{padding-top:112px}
+.cat-top{display:flex;flex-direction:column;align-items:flex-start;gap:22px;background:var(--c);border-radius:56px;padding:clamp(26px,4.5vw,56px);margin-bottom:28px}
+.cat-back{display:inline-flex;align-items:center;gap:8px;font-family:'Work Sans',sans-serif;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);text-decoration:none;background:rgba(255,255,255,.65);padding:10px 20px;border-radius:40px;transition:background .2s}
+.cat-back:hover{background:#fff}
+.cat-back svg{width:16px;height:16px}
+.cat-top h1{font-family:'Jost',sans-serif;font-weight:500;font-size:clamp(21px,2.2vw,28px);line-height:1.12;color:var(--ink);letter-spacing:0;text-transform:none;margin:0}
+.cat-top p{font-family:'Work Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:.08em;color:var(--ink);opacity:.7;margin:0}
+.cat-more{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:44px 0 0}
+.cat-more a{font-family:'Work Sans',sans-serif;font-weight:600;font-size:13px;letter-spacing:.08em;padding:11px 22px;border-radius:40px;color:var(--ink);text-decoration:none;background:var(--c);transition:opacity .2s,transform .2s}
+.cat-more a:hover{transform:translateY(-2px)}
+.cat-more a.cur{outline:2.5px solid var(--ink);outline-offset:2px}
+.cat-pics{display:block;height:300px}
+.cat-card.w .cat-pics{height:340px}
+.cat-pics span{width:100%;height:100%;border-radius:34px}
+.cat-pics span:first-child{grid-row:auto}
+.cat-meta{padding:0 12px 0 16px}
+.cat-meta h3{margin:0}
+.cat-meta{min-height:84px}
+.sec-label .intro-folio{display:block;background:none;border-radius:0;padding:0;font-family:'Work Sans',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--label)}
+.sec-label .intro-folio b{font-family:inherit;font-weight:inherit;color:inherit}
+.cat-card[href="pruzkum.html"] .cat-pics img{scale:1.07;transform-origin:50% 0}
+.cats-head{margin-bottom:30px}
+@media(max-width:560px){.cat-pics,.cat-card.w .cat-pics{height:250px}}
+
+/* ===== COMPACT: menší písmo a grafika ===== */
+:root{--max:1060px;--pad:clamp(20px,4.5vw,56px)}
+.h2x{max-width:calc(var(--max) - 2*var(--pad))}
+body{font-size:15px}
+.nav{top:10px;padding:8px 22px}
+.nav-mark{font-size:13px;letter-spacing:.2em}
+.nav-mark svg{width:30px}
+.nav-links{font-size:11.5px;gap:24px}
+.eyebrow{font-size:11.5px}
+.hB{padding-top:92px;gap:14px}
+@media(min-width:841px){.hB{height:min(68svh,560px);min-height:460px}}
+@media(max-width:840px){.hB{height:auto;min-height:0}.hB .t{min-height:360px}}
+.hB>*{border-radius:40px}
+.hB .t{padding:clamp(24px,3.6vw,48px);gap:14px}
+.hB .tx{gap:14px}
+.hB .tx p.lead{font-size:15px;max-width:440px;line-height:1.6}
+.hB .tx .eyebrow{font-size:11px}
+.hB .hero-crack{width:min(100px,20%)}
+.hB .m{font-size:clamp(13px,1.3vw,18px)}
+.intro.section-pad,.profile.section-pad,.services.section-pad{padding-top:76px;padding-bottom:76px}
+.showcase.section-pad{padding-top:40px;padding-bottom:76px}
+.intro-copy,.profile-text{border-radius:44px;padding:clamp(24px,4vw,48px)}
+.intro-copy{font-size:15px}
+.intro-copy p:first-of-type{font-size:clamp(18px,1.8vw,21px)}
+.profile-text h2{font-size:clamp(22px,2.4vw,28px)}
+.profile-text p{font-size:14.5px}
+.profile-role{font-size:13px}
+.cred{font-size:13.5px}
+.specimen-card{max-width:340px}
+.services-grid .sec-label h2{font-size:clamp(24px,2.7vw,32px)}
+.services-grid .sec-label .lead,.services-head .lead{font-size:14.5px}
+.service-index{gap:9px}
+.service-row{padding:12px 24px}
+.service-row .title{font-size:14.5px}
+.service-row .title em{font-size:10px}
+.service-row .idx{width:24px;height:24px}
+.cats-head{margin-bottom:22px}
+.cat-card{border-radius:38px;padding:12px 12px 14px;gap:12px}
+.cat-pics{height:215px}
+.cat-card.w .cat-pics{height:250px}
+.cat-pics span{border-radius:28px}
+.cat-meta{min-height:68px;padding:0 10px 0 14px}
+.cat-meta h3{font-size:clamp(17px,1.7vw,22px)}
+.cat-go{width:40px;height:40px}
+.cat-go svg{width:17px;height:17px}
+.showcase-item img{border-radius:22px}
+.cat-page.section-pad{padding-top:96px}
+.cat-top{border-radius:44px;padding:clamp(22px,3.6vw,44px);gap:18px}
+.cat-top h1{font-size:clamp(17px,1.7vw,22px)}
+.cat-back{font-size:12px;padding:8px 16px}
+.cat-more a,.showcase-filter button{font-size:12px;padding:9px 18px}
+.contact h2{font-size:clamp(26px,3.8vw,40px);line-height:1.2}
+.contact .wrap{border-radius:44px}
+.contact-details{font-size:14.5px;line-height:1.9}
+footer{font-size:10.5px}
+@media(max-width:560px){.cat-pics,.cat-card.w .cat-pics{height:200px}}
+
+@media(min-width:841px){
+.intro-grid{align-items:stretch}
+.intro .sec-label{position:relative;justify-content:flex-start}
+.intro .intro-mosaic{margin-top:0;aspect-ratio:auto;height:auto;flex:1 1 0;min-height:340px}
+.intro .sec-label .intro-folio{position:absolute;left:0;bottom:100%;margin-bottom:16px;white-space:nowrap}
+.intro .intro-copy{display:flex;flex-direction:column;justify-content:center}
+}
+</style></body>
+</html>
+<script>
+(function(){
+  function fit(){
+    var h=document.querySelector('.hB .tx h1'), l=document.querySelector('.hB .tx p.lead');
+    if(!h||!l) return;
+    h.style.fontSize='100px';
+    var target=l.getBoundingClientRect().width, w=h.scrollWidth;
+    if(w>0&&target>0) h.style.fontSize=Math.max(36,Math.min(120,100*target/w*0.88))+'px';
+  }
+  window.addEventListener('resize',fit);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+  window.addEventListener('load',fit); fit();
+})();
+</script>
